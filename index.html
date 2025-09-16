@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Docsify 예시</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", "Noto Sans KR", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        loadSidebar: true,
+        subMaxLevel: 3,
+        basePath: "./",
+        relativePath: true,
+        themeColor: "#3F51B5",
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+        },
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  </body>
+</html>

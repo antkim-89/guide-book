@@ -1,0 +1,14 @@
+{
+  "name": "convention",
+  "version": "1.0.0",
+  "description": "> **Docsify**를 사용하여 구축된 사내 개발팀을 위한 개발 방법론과 코딩 컨벤션 가이드",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
