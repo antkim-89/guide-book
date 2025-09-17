@@ -1,6 +1,15 @@
-- [Home](/?id=📋-개발-컨벤션-가이드)
-  - [01. migration](/document/migration.md)
-  - [02. front-end](/document/front-convention.md)
-  - [03. back-end](/document/back-convention.md)
-  - [04. database](/document/DB-convention.md)
-  - [05. vscode-setting](/document/vscode-setting.md)
+- **Convention**
+  - [01. front-end](/document/convention/frontend.md?id=vuejs-코드-컨벤션-가이드)
+  - [02. back-end](/document/convention/backend.md?id=java-amp-spring-코드-컨벤션-가이드)
+  - [03. database](/document/convention/database.md?id=db-가이드-문서)
+- **Migration**
+  - [01. vue-migration](/document/migration/vue-migration.md?id=vue2-→-vue3-마이그레이션-대시보드)
+- **Kong**
+  - [Entity](/document/kong/entity.md)
+    - [01. Service](/document/kong/entities/service.md)
+    - [02. Route](/document/kong/entities/route.md)
+    - [03. Consumer](/document/kong/entities/consumer.md)
+    - [04. Consumer Group](/document/kong/entities/consumer-group.md)
+  - [Security](/document/kong/security.md)
+- **Setting**
+  - [01. vscode-setting](/document/vscode-setting.md?id=vs-code-개발-환경-설정-가이드)
