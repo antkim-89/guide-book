@@ -34,7 +34,16 @@
   - 코드 품질 자동화 도구 (jspecify, spotless, Lombok 등)
   - Vue.js + Spring Boot 통합 방법
 
-### 4. VSCode 설정
+### 4. Database 가이드
+
+- **파일**: `DB-convention.md`
+- **내용**:
+  - DB 설치방법
+  - DB 데이터 정의와 테이블 설계 방법
+  - DB 기본 문법
+  - DB 정규화, 쿼리 튜닝 성능 최적화
+
+### 5. VSCode 설정
 
 - **파일**: `vscode-setting.md`
 - **내용**: 개발 환경 설정 가이드
