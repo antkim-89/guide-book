@@ -1,6 +1,6 @@
-## [Consumer](https://developer.konghq.com/gateway/entities/consumer/)
+# [Consumer](https://developer.konghq.com/gateway/entities/consumer/)
 
-### What is a Consumer?
+## What is a Consumer?
 
 Consumer는 Kong Gateway에서 관리하는 API를 사용하거나 소비하는 외부 클라이언트를 식별하는 엔티티입니다. Consumer는 API와 상호작용하는 애플리케이션, 서비스, 사용자들을 나타낼 수 있습니다. Kong Gateway는 Consumer를 정의하고 관리하는 것을 허용하고, 접근 제어 정책을 적용하고, API 사용량을 모니터링합니다.
 
@@ -8,7 +8,7 @@ Consumer는 API 접근을 관리하고, 사용량을 추적하고, 보안을 보
 
 플러그인을 Consumer에게 직접 연결하면 요금 제한과 같은 특정 제어를 Consumer 수준에서 관리할 수 있습니다.
 
-### Schema
+## Schema
 
 Consumer의 스키마는 다음과 같습니다:
 
@@ -25,7 +25,7 @@ Consumer의 스키마는 다음과 같습니다:
 - `custom_id`는 외부 시스템의 사용자 ID와 매핑하는 데 사용됩니다.
 - Consumer는 인증 플러그인과 함께 사용되어 API 접근을 제어합니다.
 
-### Use cases for Consumers
+## Use cases for Consumers
 
 Consumers의 일반 사용 예시:
 
@@ -35,9 +35,9 @@ Consumers의 일반 사용 예시:
 | Rate limiting  | 유량 제어는 Consumer의 등급에 따라 세분화됩니다.                                                                                               |
 | Transformation | Consumer를 기반으로 response body들에 따라 값을 추가하거나 제거합니다.                                                                         |
 
-### Set up a Consumer
+## Set up a Consumer
 
-#### 1. UI를 통한 설정
+### 1. UI를 통한 설정
 
 다음은 기본 구성을 사용하여 **example-consumer**라는 새로운 Consumer를 생성합니다:
 
@@ -47,7 +47,7 @@ Consumers의 일반 사용 예시:
 4. 선택적으로 Custom ID를 입력하세요.
 5. **Save**를 클릭하세요.
 
-#### 2. Admin API를 통한 설정
+### 2. Admin API를 통한 설정
 
 ```bash
 curl -i -X POST http://localhost:8001/consumers/ \
@@ -59,7 +59,7 @@ curl -i -X POST http://localhost:8001/consumers/ \
     }'
 ```
 
-#### 3. decK을 통한 설정
+### 3. decK을 통한 설정
 
 ```yaml
 _format_version: "3.0"
@@ -68,7 +68,7 @@ consumers:
     custom_id: external-user-123
 ```
 
-#### 4. Terraform을 통한 설정
+### 4. Terraform을 통한 설정
 
 ```hcl
 resource "konnect_gateway_consumer" "my_consumer" {
@@ -78,7 +78,7 @@ resource "konnect_gateway_consumer" "my_consumer" {
 }
 ```
 
-### Consumer와 인증 플러그인
+## Consumer와 인증 플러그인
 
 Consumer는 다양한 인증 플러그인과 함께 사용됩니다:
 
@@ -88,7 +88,7 @@ Consumer는 다양한 인증 플러그인과 함께 사용됩니다:
 - **OAuth2**: OAuth2 플로우를 통한 인증
 - **LDAP Authentication**: LDAP 서버를 통한 인증
 
-### Consumer Groups
+## Consumer Groups
 
 Consumer Groups는 여러 Consumer를 그룹화하여 공통 정책을 적용할 수 있게 합니다:
 
@@ -96,7 +96,7 @@ Consumer Groups는 여러 Consumer를 그룹화하여 공통 정책을 적용할
 - Rate limiting, ACL(Access Control List) 등의 정책을 그룹 단위로 관리할 수 있습니다.
 - Consumer는 여러 Consumer Group에 속할 수 있습니다.
 
-### Centrally-managed Consumers
+## Centrally-managed Consumers
 
 Consumers는 Konnect region으로 범위를 지정하여 중앙에서 관리하거나, Gateway Manager의 Control plane으로 범위를 지정할 수 있습니다.
 
@@ -121,7 +121,7 @@ Konnect Consumers API를 사용하여 Consumer를 중앙 관리할 수 있습니
 
 중앙 관리되는 Consumer를 만들 때, 반드시 영역에 할당해야 합니다. 영역은 조직화된 기준으로 정의된 Identity를 중심으로 Consumer를 그룹화합니다. 예를 들어, 생산 영역이나 개발 영역입니다. 영역들은 Konnect의 geographic region로 연결되어 있습니다. 또한 중앙 관리 Consumer는 Consumer가 인증할 수 있도록 특정 키 인증 구성을 설정해야 합니다.
 
-### Consumer와 플러그인
+## Consumer와 플러그인
 
 Consumer에 플러그인을 직접 연결할 수 있습니다. Consumer에 첨부된 플러그인은 해당 Consumer의 모든 요청에 대해 실행됩니다:
 
@@ -130,7 +130,7 @@ Consumer에 플러그인을 직접 연결할 수 있습니다. Consumer에 첨�
 - **IP Restriction**: Consumer별로 IP 접근 제한
 - **ACL (Access Control List)**: Consumer별로 리소스 접근 권한 제어
 
-### Consumer 관리 모범 사례
+## Consumer 관리 모범 사례
 
 1. **명명 규칙**: Consumer의 username과 custom_id에 일관된 명명 규칙을 사용하세요.
 2. **태그 활용**: Consumer를 분류하고 관리하기 위해 태그를 적극 활용하세요.
