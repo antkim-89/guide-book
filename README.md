@@ -62,7 +62,33 @@
   - Kong Gateway 보안 설정 가이드
   - SSL/TLS 인증서 관리
 
-### 3. Migration (마이그레이션)
+### 3. Git
+
+#### Git 전략
+
+- **파일**: `git/strategy.md`
+- **내용**:
+  - Git Flow와 GitHub Flow 브랜치 전략 비교
+  - 각 전략의 장단점 및 적용 시나리오
+  - 팀 협업을 위한 브랜치 관리 방법론
+
+#### Pull Request 가이드
+
+- **파일**: `git/pr.md`
+- **내용**:
+  - GitHub Pull Request 생성 및 관리 방법
+  - Fork부터 Merge까지의 전체 워크플로우
+  - 코드 리뷰 프로세스 및 협업 방법
+
+#### CI/CD 설정
+
+- **파일**: `git/ci-cd.md`
+- **내용**:
+  - Jenkins를 활용한 CI/CD 파이프라인 구축
+  - Windows 환경에서의 Jenkins 설치 및 설정
+  - GitHub 연동 및 자동화 워크플로우 구성
+
+### 4. Migration (마이그레이션)
 
 #### Vue2 → Vue3 마이그레이션
 
@@ -74,7 +100,7 @@
   - 라이브러리별 마이그레이션 매트릭스
   - 품질 관리 및 체크리스트
 
-### 4. Setting (개발 환경)
+### 5. Setting (개발 환경)
 
 #### VSCode 설정
 

@@ -44,6 +44,12 @@
     - [05. Keys](/document/kong/securities/key.md?id=Keys)
     - [06. Key Sets](/document/kong/securities/key-set.md?id=Key-Sets)
 
+- **Git**
+
+  - [Strategy](/document/git/strategy.md)
+  - [Pull Request](/document/git/pr.md)
+  - [CI/CD](/document/git/ci-cd.md)
+
 - **Migration**
 
   - [01. vue-migration](/document/migration/vue-migration.md?id=vue2-→-vue3-마이그레이션-대시보드)
