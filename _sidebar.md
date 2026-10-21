@@ -43,6 +43,7 @@
     - [04. Vaults](/document/kong/securities/vaults.md?id=Vaults)
     - [05. Keys](/document/kong/securities/key.md?id=Keys)
     - [06. Key Sets](/document/kong/securities/key-set.md?id=Key-Sets)
+  - [Config](/document/kong/test.md)
 
 - **Git**
 
